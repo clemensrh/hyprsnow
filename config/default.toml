@@ -1,0 +1,32 @@
+[general]
+enabled = true
+fps_limit = 60
+pause_on_fullscreen = true
+start_with_session = true
+
+[snow]
+enabled = true
+density = 0.7
+wind_strength = 0.25
+particle_size = 1.0
+accumulation = true
+accumulation_speed = 5.0
+max_snow_depth = 120
+
+[windows]
+enabled = true
+accumulate_on_windows = true
+# Maximum window-top snow depth in pixels. Set to 0 for no window accumulation.
+max_snow_depth = 32
+track_floating = true
+track_tiled = true
+
+[physics]
+enabled = true
+gravity = 9.81
+snow_compaction = 0.4
+sliding = true
+
+[interaction]
+snowman_building = true
+interaction_key = "SUPER SHIFT S"

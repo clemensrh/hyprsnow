@@ -1,0 +1,13 @@
+[Unit]
+Description=Christmas Snow Wayland overlay
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=christmas-snow run
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target

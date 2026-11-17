@@ -1,0 +1,13 @@
+[Unit]
+Description=Christmas Snow system tray
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=christmas-snow tray
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target
